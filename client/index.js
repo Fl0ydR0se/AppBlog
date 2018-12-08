@@ -62,7 +62,7 @@ function renderPosts(_posts = []) {
     if (_posts.length > 0) {
         $posts.innerHTML = _posts.map(post => card(post)).join(' ')
     } else {
-        $posts.innerHTML = '<div class="center">Записей пока нет</div>'
+        $posts.innerHTML = '<div class="center"><b>Записей пока нет<b></div>'
     }
 }
 
