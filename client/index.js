@@ -66,6 +66,8 @@ const card = post => {
     }
   }
   
+
+  
   function onCreatePost() {
     const $title = document.querySelector('#title')
     const $text = document.querySelector('#text')
