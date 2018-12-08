@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     posts = backendPosts.concat()
     setTimeout(() => {
       renderPosts(posts)
-  }, 2500)
+  }, 3000)
   })
 
   modal = M.Modal.init(document.querySelector('.modal'))
