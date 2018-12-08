@@ -4,7 +4,8 @@ node_js:
   - node
 
 before_script:
-  - yarn
+  - npm i
 
 script:
-  - yarn dev
+  - npm run lint
+
