@@ -23,5 +23,10 @@
   "devDependencies": {
     "eslint-plugin-react": "^7.11.1",
     "nodemon": "^1.18.7"
+  },
+  "rules": {
+    "linebreak-style": 0,
+    "global-require": 0,
+    "eslint linebreak-style": [0, "error", "windows"]
   }
 }
