@@ -27,7 +27,6 @@ router.delete('/:postId', async (request, response) => {
     response.status(200).json({
         message: 'Удалено'
     })
-
 })
 
 
