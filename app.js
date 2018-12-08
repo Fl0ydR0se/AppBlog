@@ -1,20 +1,24 @@
-const express = require('express') // библиотке для веб сервера
-const mongoose = require('mongoose')
-const path = require('path') // библиотека для работы директорями
-const postRouter = require('./routs/post.js')
-const keys = require('./keys')
-const port = process.env.port || 5000    // первій системный порт или наш 5000
 
-const clientPath = path.join(__dirname, 'client') // абсолютный путь к индексштмл
+
+const express = require('express')
+const mongoose = require('mongoose')
+const bodyParser = require('body-parser')
+const path = require('path')
+const postRouter = require('./routes/post.js')
+const keys = require('./keys')
+
+const port = process.env.PORT || 5000
+const clientPath = path.join(__dirname, 'client')
 
 mongoose.connect(keys.mongoURI)
-.then(() => console.log('Mongo DB connected'))
-.catch(err => console.error(err))
-const app = express() // обїект приложения
+  .then(() => console.log('MongoDB connected.'))
+  .catch(err => console.error(err))
+
+const app = express()
+app.use(bodyParser.json())
 app.use('/api/post', postRouter)
 app.use(express.static(clientPath))
 
 app.listen(port, () => {
-    console.log(`server has been started on port ${port}`)
+  console.log(`Server has been started on port ${port}`)
 })
-// nodemon -  библиоткеа для пересборки вебсервера при измененияхв коде
