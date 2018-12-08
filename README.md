@@ -1,3 +1,3 @@
 # AppBlog
 
-to run project use: npm run dev || yarn dev
+to run project use command: npm run dev or yarn dev
