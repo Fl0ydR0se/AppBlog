@@ -62,7 +62,7 @@ function renderPosts(_posts = []) {
     if (_posts.length > 0) {
         $posts.innerHTML = _posts.map(post => card(post)).join(' ')
     } else {
-        $posts.innerHTML = '<div class="center">Постов пока нет</div>'
+        $posts.innerHTML = '<div class="center">Записей пока нет</div>'
     }
 }
 
@@ -88,7 +88,7 @@ function onCreatePost() {
 
 function onDeletePost(event) {
     if (event.target.classList.contains('js-remove')) {
-        const decision = confirm('Вы уверены, что хотите удалить пост?')
+        const decision = confirm('Вы уверены, что хотите удалить запись?')
 
         if (decision) {
             const id = event.target.getAttribute('data-id')
