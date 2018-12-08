@@ -13,7 +13,7 @@ rules:
   indent:
     - error
     - 4
-  linebreak-style:
+  linebreak-style: 0
     - error
     - windows
   quotes:
