@@ -1,14 +1,14 @@
 /* eslint-disable no-undef */
 const card = post => {
     return `
-  <div class="card z-depth-4">
+  <div class="card z-depth-4" style="border-radius: 10px;">
       <div class="card-content">
           <span class="card-title">${post.title}</span>
           <p style="white-space: pre-line;">${post.text}</p>
           <small>${new Date(post.date).toLocaleDateString()}</small>
       </div>
-      <div class="card-action">
-          <button style="background-color: rgb(181, 115, 147);" id="deletebutton" class="btn btn-small js-remove" data-id="${post._id}">
+      <div class="card-action" style="border-radius: 10px;">
+          <button style="background-color: rgb(181, 115, 147); border-radius: 10px;" id="deletebutton" class="btn btn-small js-remove" data-id="${post._id}">
               <i class="material-icons">delete</i>
           </button>
       </div>
