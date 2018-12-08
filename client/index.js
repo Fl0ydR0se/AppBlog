@@ -45,7 +45,9 @@ class PostApi {
 document.addEventListener('DOMContentLoaded', () => {
   PostApi.fetch().then(backendPosts => {
     posts = backendPosts.concat()
-    renderPosts(posts)
+    setTimeout(() => {
+      renderPosts(posts)
+  }, 2500)
   })
 
   modal = M.Modal.init(document.querySelector('.modal'))
