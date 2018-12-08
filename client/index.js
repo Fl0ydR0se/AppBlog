@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 const card = post => {
     return `
   <div class="card z-depth-4">
