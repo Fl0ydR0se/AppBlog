@@ -16,7 +16,7 @@ node_js:
 cache:
   directories:
     - "node_modules" # This will tell Travis CI to cache the dependencies
-script: yarn dev # Here you could also run the build step of your application
+script: npm run dev # Here you could also run the build step of your application
 before_deploy: npm install now --no-save # Install Now CLI on Travis
 deploy:
   - provider: script # Run a custom deployment script which we will define below
