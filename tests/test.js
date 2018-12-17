@@ -3,6 +3,7 @@ describe('first test', () => {
 	it('whatever', () => {
 		browser.url('https://myappbloggg.herokuapp.com');
 		browser.waitForVisible('.btn-floating');
+		browser.pause(9999);
 		browser.click('.btn-floating');
 		
 	})
