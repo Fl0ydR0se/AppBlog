@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test": "wdio wdio.conf.js"
   },
   "keywords": [
     "blog",
@@ -16,12 +17,23 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "chai": "^4.2.0",
     "eslint": "^5.10.0",
+    "eslint-plugin-webdriverio": "^1.0.1",
     "express": "^4.16.4",
-    "mongoose": "^5.3.15"
+    "mongoose": "^5.3.15",
+    "puppeteer": "^1.11.0"
   },
   "devDependencies": {
+    "babel-register": "^6.26.0",
     "eslint-plugin-react": "^7.11.1",
-    "nodemon": "^1.18.7"
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.7",
+    "wdio-chromedriver-service": "^0.1.5",
+    "wdio-mocha-framework": "^0.6.4",
+    "wdio-selenium-standalone-service": "0.0.12",
+    "wdio-spec-reporter": "^0.1.5",
+    "wdio-visual-regression-service": "^0.9.0",
+    "webdriverio": "^4.14.1"
   }
 }
