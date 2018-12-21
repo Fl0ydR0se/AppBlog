@@ -61,17 +61,17 @@ p {
 }
 
 .game {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  width: 511px;
-  height: 614px;
-  border-radius: 9px;
-  background-color: #333;
-  padding: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 511px;
+    height: 611px;
+    border-radius: 9px;
+    background-color: #333;
+    padding: 5px;
 
 }
 
@@ -116,7 +116,7 @@ p {
 
 .won, .init {
     z-index: 999;
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     margin: auto;
@@ -127,14 +127,14 @@ p {
 
 .won {
     background-color: var(--green);
-    top: 20px;
+    top: 100%;
     width: 600px;
     height: 300px;
 }
 
 .init {
     background-color: var(--red);
-    top: 20px;
+    top: 40%;
     width: 600px;
     height: 300px;
 }
@@ -217,9 +217,4 @@ p {
     .init {
         top: 10%;
     }
-}
-
-
-.to-do-box{
-  margin-bottom: 100px;
 }

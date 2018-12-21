@@ -2,7 +2,7 @@ const game = document.querySelector('.game');
 var arrFactory = [];
 var arrTree = [];
 var newFactory;
-var interval = 800;
+var interval = 3;
 //var counter = 1;
 
 function createGame() {
@@ -45,7 +45,7 @@ function addTree(e) {
             document.querySelector('.hidden').classList.remove('levelUp');
             let bang = document.querySelector('.won');
             bang.style.animation = 'won .6s ease-in-out';
-            bang.style.top = '20px';
+            bang.style.top = '30%';
             replay();
         }
     } 
