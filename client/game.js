@@ -2,7 +2,7 @@ const game = document.querySelector('.game');
 var arrFactory = [];
 var arrTree = [];
 var newFactory;
-var interval = 3;
+var interval = 600;
 //var counter = 1;
 
 function createGame() {
