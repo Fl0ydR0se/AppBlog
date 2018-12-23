@@ -1,7 +1,9 @@
 import puppeteer from "puppeteer";
 import faker from "faker";
 
-const APP = "https://www.change-this-to-your-website.com/contact-form.html";
+const expect = require('chai').expect
+
+const APP = "https://myappbloggg.herokuapp.com/";
 
 const lead = {
     name: faker.name.firstName(),
@@ -27,7 +29,7 @@ beforeAll(async () => {
   });
 
 
-  describe("Contact form", () => {
+  describe.skip("Contact form", () => {
     test("lead can submit a contact request", async () => {
       await page.goto(APP);
       await page.waitForSelector("[data-test=contact-form]");
@@ -45,12 +47,10 @@ beforeAll(async () => {
     });
   });
 
-  describe.skip("Testing the frontend", () => {
-    test("assert that <title> is correct", async () => {
-      const title = await page.title();
-      expect(title).toBe(
-        "Gestione Server Dedicati | Full Managed | Assistenza Sistemistica"
-      );
+  describe("Testing the title", () => {
+    test(`assert that title is correct`, async () => {
+      await page.goto(APP);
+      let title = await page.title();
+      expect(title).to.equal("Main page | My simple blog");      
     });
-    // Insert more tests starting from here!
   });

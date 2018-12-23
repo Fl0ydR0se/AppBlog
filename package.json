@@ -17,11 +17,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-preset-react": "^6.24.1",
     "chai": "^4.2.0",
     "eslint": "^5.10.0",
     "eslint-plugin-webdriverio": "^1.0.1",
     "express": "^4.16.4",
-    "mongoose": "^5.3.15"
+    "mongoose": "^5.3.15",
+    "react": "^16.7.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
