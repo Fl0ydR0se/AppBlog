@@ -53,4 +53,4 @@ beforeAll(async () => {
       let title = await page.title();
       expect(title).to.equal("Main page | My simple blog");      
     });
-  });
+  },900000);
